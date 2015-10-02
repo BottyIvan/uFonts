@@ -11,7 +11,7 @@ repositories {
 }
 ...
 dependencies {
-    compile 'com.botty.ubuntufont:ubuntufont:0.0.3'
+    compile 'com.github.bottyivan:ubuntufont:0.0.4@aar'
 }
 </pre>
 <p>2. Add to your layout</p>
