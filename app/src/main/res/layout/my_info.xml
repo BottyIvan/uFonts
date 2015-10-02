@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#EEEEEE">
+
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/me"
+        app:border="false"
+        app:shadow="true"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <com.botty.ubuntufont.Bold
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="google.com/+IvanBotty"
+            android:padding="10dp" />
+
+        <com.botty.ubuntufont.Light
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2011 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd."
+            android:padding="10dp" />
+    </LinearLayout>
+</LinearLayout>
