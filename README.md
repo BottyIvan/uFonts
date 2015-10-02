@@ -16,16 +16,15 @@ dependencies {
 </pre>
 <p>2. Add to your layout</p>
 
-<pre>
+```xml
 <com.botty.ubuntufont.Regular
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="Your text !"/>
-</pre>
-    
+```    
 #All fonts 
 
-<pre>            
+```xml
 <com.botty.ubuntufont.Regular
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -113,7 +112,7 @@ dependencies {
             android:textSize="20sp"
             android:paddingBottom="10dp"
             android:paddingTop="10dp" />
-</pre>
+```
 
 #License
 
