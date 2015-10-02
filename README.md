@@ -15,14 +15,16 @@ dependencies {
 }
 </pre>
 <p>2. Add to your layout</p>
+
 <pre>
 <com.botty.ubuntufont.Regular
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="Your text !"/>
-    </pre>
+</pre>
     
 #All fonts 
+
 <pre>            
 <com.botty.ubuntufont.Regular
             android:layout_width="fill_parent"
