@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_github:
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://www.*.*"));
+                i.setData(Uri.parse("https://github.com/BottyIvan/uFonts"));
                 startActivity(i);
                 break;
             case R.id.action_info:

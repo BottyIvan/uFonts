@@ -4,7 +4,7 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'signing'
 
 // This is the library version used when deploying the artifact
-version = "0.0.3"
+version = "0.0.4"
 
 android {
     compileSdkVersion 23
@@ -27,7 +27,7 @@ android {
 
 def siteUrl = 'https://github.com/BottyIvan/uFonts'      // Homepage URL of the library
 def gitUrl = 'https://github.com/BottyIvan/uFonts.git'   // Git repository URL
-group = "com.botty.ubuntufont"                                        // Maven Group ID for the artifact
+group = "com.github.bottyivan"                                        // Maven Group ID for the artifact
 
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
