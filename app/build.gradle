@@ -21,11 +21,11 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':ubuntufont')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.pkmmte.view:circularimageview:1.1'
     compile('com.mikepenz:aboutlibraries:5.2.4@aar') {
         transitive = true
     }
+    compile project(':ubuntufont')
 }
