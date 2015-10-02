@@ -23,7 +23,8 @@ dependencies {
     </pre>
     
 #All fonts 
-<pre>            <com.botty.ubuntufont.Regular
+<pre>            
+<com.botty.ubuntufont.Regular
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Ubuntu Regular"
@@ -31,7 +32,7 @@ dependencies {
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
 
-            <com.botty.ubuntufont.RegularItalic
+<com.botty.ubuntufont.RegularItalic
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Ubuntu Regular Italic"
@@ -39,7 +40,7 @@ dependencies {
             android:paddingBottom="10dp"
             android:paddingTop="10dp" />
 
-            <com.botty.ubuntufont.Bold
+<com.botty.ubuntufont.Bold
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Ubuntu Bold"
@@ -47,7 +48,7 @@ dependencies {
             android:paddingBottom="10dp"
             android:paddingTop="10dp" />
 
-            <com.botty.ubuntufont.BoldItalic
+<com.botty.ubuntufont.BoldItalic
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Ubuntu Bold Italic"
@@ -55,7 +56,7 @@ dependencies {
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
 
-            <com.botty.ubuntufont.Light
+<com.botty.ubuntufont.Light
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Ubuntu Light"
@@ -63,7 +64,7 @@ dependencies {
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
 
-            <com.botty.ubuntufont.Medium
+<com.botty.ubuntufont.Medium
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Ubuntu Medium"
@@ -71,7 +72,7 @@ dependencies {
             android:paddingBottom="10dp"
             android:paddingTop="10dp" />
 
-            <com.botty.ubuntufont.Condensed
+<com.botty.ubuntufont.Condensed
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Ubuntu Condesed"
@@ -79,7 +80,7 @@ dependencies {
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
 
-            <com.botty.ubuntufont.MonoRegular
+<com.botty.ubuntufont.MonoRegular
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="UbuntuMono Regular"
@@ -87,7 +88,7 @@ dependencies {
             android:paddingBottom="10dp"
             android:paddingTop="10dp" />
 
-            <com.botty.ubuntufont.MonoRegularItalic
+<com.botty.ubuntufont.MonoRegularItalic
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="UbuntuMono Regular Italic"
@@ -95,7 +96,7 @@ dependencies {
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
 
-            <com.botty.ubuntufont.MonoBold
+<com.botty.ubuntufont.MonoBold
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="UbuntuMono Bold"
@@ -103,15 +104,17 @@ dependencies {
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
 
-            <com.botty.ubuntufont.MonoBoldItalic
+<com.botty.ubuntufont.MonoBoldItalic
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="UbuntuMono Bold Regular"
             android:textSize="20sp"
             android:paddingBottom="10dp"
             android:paddingTop="10dp" />
-            </pre>
+</pre>
+
 #License
+
 <pre>
 -------------------------------
 UBUNTU FONT LICENCE Version 1.0
