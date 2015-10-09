@@ -11,9 +11,19 @@ repositories {
 }
 ...
 dependencies {
-    compile 'com.botty.ubuntufont:ubuntufont:0.0.3'
+    compile 'com.github.bottyivan:ubuntufont:0.0.4@aar'
 }
 </pre>
+
+<p>1. Provide the Maven dependency</p>
+```xml
+<dependency>
+    <groupId>com.github.bottyivan</groupId>
+        <artifactId>ubuntufont</artifactId>
+            <version>0.0.4</version>
+                <type>aar</type>
+</dependency>
+```    
 <p>2. Add to your layout</p>
 
 ```xml
