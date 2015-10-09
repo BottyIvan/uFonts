@@ -32,98 +32,85 @@ dependencies {
     android:layout_height="wrap_content"
     android:text="Your text !"/>
 ```    
-#All fonts 
+#Costum ActionBar
+
+create a <a href="https://github.com/BottyIvan/uFonts/blob/master/app/src/main/res/layout/toolbar.xml">layout/toolbar.xml</a> 
 
 ```xml
-<com.botty.ubuntufont.Regular
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Ubuntu Regular"
-            android:textSize="20sp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_default_primary" >
 
-<com.botty.ubuntufont.RegularItalic
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Ubuntu Regular Italic"
-            android:textSize="20sp"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp" />
-
-<com.botty.ubuntufont.Bold
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Ubuntu Bold"
-            android:textSize="20sp"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp" />
-
-<com.botty.ubuntufont.BoldItalic
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Ubuntu Bold Italic"
-            android:textSize="20sp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
-
-<com.botty.ubuntufont.Light
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Ubuntu Light"
-            android:textSize="20sp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
-
-<com.botty.ubuntufont.Medium
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Ubuntu Medium"
-            android:textSize="20sp"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp" />
-
-<com.botty.ubuntufont.Condensed
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Ubuntu Condesed"
-            android:textSize="20sp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
-
-<com.botty.ubuntufont.MonoRegular
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="UbuntuMono Regular"
-            android:textSize="20sp"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp" />
-
-<com.botty.ubuntufont.MonoRegularItalic
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="UbuntuMono Regular Italic"
-            android:textSize="20sp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
-
-<com.botty.ubuntufont.MonoBold
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="UbuntuMono Bold"
-            android:textSize="20sp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
-
-<com.botty.ubuntufont.MonoBoldItalic
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="UbuntuMono Bold Regular"
-            android:textSize="20sp"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp" />
+    <com.botty.ubuntufont.Bold
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="" />
+</RelativeLayout>
 ```
+extends your activity with Activity
 
+<pre>
+public class MainActivity extends Activity {
+    
+    ....
+
+        this.getActionBar().setDisplayShowCustomEnabled(true);
+        this.getActionBar().setDisplayShowTitleEnabled(false);
+
+        LayoutInflater inflator = LayoutInflater.from(this);
+        View v = inflator.inflate(R.layout.toolbar, null);
+
+        //if you need to customize anything else about the text, do it here.
+        //I'm using a custom TextView with a custom font in my layout xml so all I need to do is set title
+        ((TextView)v.findViewById(R.id.title)).setText(this.getTitle());
+
+        //assign the view to the actionbar
+        this.getActionBar().setCustomView(v);
+
+    ...
+</pre>
+
+edit the style like this:
+
+```xml
+    <!-- Base application theme. -->
+    <style name="yourAppTheme" parent="android:Theme.DeviceDefault.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        ....
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        ....
+    </style>
+
+    <style name="yourAppTheme.ActionBar" parent="android:Widget.DeviceDefault.ActionBar.Solid">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:color">#fff</item>
+    </style>
+```    
+and for support Android 5.0+
+```xml
+    <!-- Base application theme. -->
+    <style name="yourAppTheme" parent="android:Theme.DeviceDefault.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        ...
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:colorEdgeEffect">@color/colorAccent</item>
+        ...
+    </style>
+
+    <style name="yourAppThee.ActionBar" parent="android:Widget.DeviceDefault.ActionBar.Solid">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:color">#fff</item>
+    </style>
+```    
 #License
 
 <pre>
